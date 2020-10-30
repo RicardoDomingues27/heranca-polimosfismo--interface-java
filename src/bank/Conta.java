@@ -3,7 +3,7 @@ package bank;
 public class Conta {
 	private int agencia;
 	private int numero;
-	//private double saldo;
+	private double saldo;
 	
 	public Conta(int agencia, int numero) {
 		this.agencia = agencia;
@@ -21,4 +21,19 @@ public class Conta {
 		return numero;
 	}
 	
+	public void deposita(double valor) {
+		this.saldo += valor;
+	}
+	public boolean saca(double valor) {
+		System.out.println("Solicitando saque de R$ "+valor);
+		if(this.saldo >= valor) {
+			this.saldo -= valor;
+			return true;
+		}
+		return false;
+	}
+	public double getSaldo() {
+		System.out.println("Saldo disponivel: "+this.saldo);
+		return this.saldo;
+	}
 }
