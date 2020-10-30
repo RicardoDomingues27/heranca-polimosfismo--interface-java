@@ -2,7 +2,7 @@
 public class TestaPolimorfismo {
 	public static void main(String[] args) {
 
-		Funcionario funcionario = new Funcionario();
+		Funcionario funcionario = new Gerente();
 		funcionario.setSalario(1000);
 
 		Gerente gerente = new Gerente();

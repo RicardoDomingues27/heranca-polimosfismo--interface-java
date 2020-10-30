@@ -13,7 +13,7 @@ public class Gerente extends Funcionario {
 	}
 	public double getBonificacao() {
 		System.out.println("Participacao dos lucros do Gerente");
-		return super.getSalario() + super.getBonificacao();// Este atributo vem da super class Funcionario
+		return super.getSalario() *2 ;// Este atributo vem da super class Funcionario
 	}
 	
 }
