@@ -14,9 +14,9 @@ public class TestaHerancaGerente {
 		gerente.setSenha("abdc11");
 		
 		
-		System.out.println(gerente.autenticaSenha("abdc11"));
-		
-		
+		//System.out.println(gerente.autenticaSenha("abdc11"));
+		System.out.println("Salario Gerente: "+gerente.getSalario());
+		System.out.println("Bonificacao Gerente: "+ gerente.getBonificacao());
 		
 		
 		

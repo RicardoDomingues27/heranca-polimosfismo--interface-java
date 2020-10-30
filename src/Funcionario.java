@@ -5,7 +5,6 @@ public class Funcionario {
 	private double salario;
 
 	public double getBonificacao() {
-
 		return this.salario * 0.1;
 	}
 

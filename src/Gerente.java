@@ -1,4 +1,4 @@
-
+// Gerente é um Funcionario
 public class Gerente extends Funcionario {
 	private String senha;
 	
@@ -10,6 +10,10 @@ public class Gerente extends Funcionario {
 	}
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+	public double getBonificacao() {
+		System.out.println("Participacao dos lucros do Gerente");
+		return super.getSalario() + super.getBonificacao();// Este atributo vem da super class Funcionario
 	}
 	
 }
