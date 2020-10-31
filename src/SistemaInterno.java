@@ -1,8 +1,8 @@
 
 public class SistemaInterno {
-	public boolean autentica(Autenticavel funcionario) {
+	public boolean autentica(Autenticavel usuarioSistema) {
 		String senha = "1111";
-		if(funcionario.autenticaSenha(senha)) {
+		if(usuarioSistema.autenticaSenha(senha)) {
 			System.out.println("Sistema autenticado com sucesso.");
 			return true;
 		}

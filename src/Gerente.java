@@ -1,5 +1,12 @@
 // Gerente é um Funcionario
 public class Gerente extends Funcionario implements Autenticavel{
+	private AutenticadorUtil autenticador ;
+	
+	Gerente(){
+		autenticador =  new AutenticadorUtil();
+	}
+	
+	
 	
 	public double getBonificacao() {
 		System.out.println("Participacao dos lucros do Gerente");
@@ -8,13 +15,13 @@ public class Gerente extends Funcionario implements Autenticavel{
 
 	@Override
 	public boolean autenticaSenha(String senha) {
-		// TODO Auto-generated method stub
-		return false;
+		
+		return this.autenticador.autenticaSenha(senha);// Delegando a função para a Classe AutenticadorUtil
 	}
 
 	@Override
 	public void setSenha(String senha) {
-		// TODO Auto-generated method stub
+		this.autenticador.setSenha(senha);// Delegando a função para a Classe AutenticadorUtil
 		
 	}
 	
